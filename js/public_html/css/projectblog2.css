@@ -1,0 +1,287 @@
+/*@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/helveticaneue.ttf");
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/helveticaneuebold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/helveticaneuemedium.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/helveticaneueitalic.ttf");
+    font-style: italic;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body{
+	margin: 0px;
+	/*font-family: Helvetica, Arial;*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+.background{
+	min-width: 1000px;
+}
+
+.clear-fix:before, .clear-fix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clear-fix{
+    *zoom: 1;
+}
+
+.hidden{
+	display: none;
+
+}
+
+
+/* Styles for Page Navigator */
+.page-nav{
+	height: 50px;
+	background-color: #3498db;
+	padding: 0px 120px;
+	box-sizing: border-box;
+}
+
+ul.nav-menu{
+	list-style-type: none;
+	margin-top: 0px;
+}
+
+ul.nav-menu>li>a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul.nav-menu>li.menu-link{
+	display: inline-block;
+	height: 50px;
+	width: 125px;
+	text-align: center;
+	/*font-family: Helvetica, Arial;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	padding-top: 16px;
+	box-sizing: border-box;
+}
+
+ul.nav-menu>li.menu-link:hover{
+	background-color: #337ab7;
+}
+
+ul.nav-menu>li.home-title{
+	text-align: center;
+	/*font-family: Helvetica, Arial;*/
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	padding-top: 12px;
+	padding-right: 30px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+ul.nav-menu>li.login-link{
+	background-color: #d9534f;
+}
+
+
+
+/* Styles for Page Header */
+
+div.page-header{
+	height: 200px;
+	background-color: white;
+	padding: 20px 120px;
+}
+
+div.page-header>p{
+	margin-top: 10px;
+	color: #5a5a5a;
+}
+
+div.top-title{
+	background-color: #fafafa;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+	height: 50px;
+	padding: 0px 120px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+
+.top-title>p{
+	font-size: 14px;
+	margin: 0px;
+	color: #428bca;
+	width: 100%;
+}
+
+span.login-text{
+	color: #333333;
+}
+
+/* Styles for Main area */
+
+.main-area{
+	padding: 40px 120px 20px;
+}
+
+
+/* Styles for Side bar */
+
+.side-bar{
+	width: 270px;
+	
+	padding: 20px 10px;
+	background-color: #f7f5fa;
+	box-sizing: border-box;
+	float: left;
+}
+
+.side-bar li{
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+.side-bar li>a{
+	text-decoration: none;
+	
+	font-size: 14px;
+	color: #716b7a;
+}
+
+.sidebar-menu{
+	padding-left: 20px;
+}
+
+/* Styles for Post area */
+
+.post-detail{
+	margin-left: 290px;
+	padding: 0px;
+}
+
+h2.post-title{
+	/*font-family: Helvetica, Arial;*/
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+span.red{
+	color: red;
+}
+
+.post-author{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.line{
+	border: 1px solid #eeeeee;
+}
+
+
+/* Styles for post content */
+
+div.post-content{
+	color: #333333;
+	font-size: 20px;
+}
+
+div.intro{
+	display: -webkit-flex;
+	display: flex;
+	/*font-family: Helvetica, Arial;*/
+	font-style: italic;
+}
+
+div.intro-frame{
+	margin-left: 15px;
+	padding: 10px;
+	border-left: 5px solid #cfe3f2;
+	background-color: #f0f7fd;
+}
+
+.intro-author{
+	text-align: right;
+}
+
+.intro-text{
+	margin-top: 0px;
+
+}
+
+span.blue{
+	color: #5bc0de;
+}
+
+span.blue2{
+	color: #337ab7;
+}
+
+
+p.summary{
+	padding: 10px;
+	border: 2px dashed #337ab7;
+}
+
+
+.post-main-content>section{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+h3.sub-title, .reference-source{
+	-webkit-align-self: flex-start;
+    align-self: flex-start;
+	font-size: 24px;
+	color: #d9534f;
+	margin-bottom: 10px;
+}
+
+.reference-source{
+	color: inherit;
+	margin-top: 10px;
+}
+
+.blue2>a{
+	text-decoration: none;
+	color: #337ab7;
+}
+
+/* Styles for Footer */
+
+.page-footer{
+	clear: both;
+	display: block;
+}
+p.copyright{
+	color: #777777;
+	text-align: center;
+	font-size: 14px;
+}

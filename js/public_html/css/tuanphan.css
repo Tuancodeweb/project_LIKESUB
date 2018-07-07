@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+.clear-fix:before, .clear-fix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clear-fix{
+    *zoom: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Styles for header*/
+
+header{
+    background-color: #01203d;
+    height: 130px;
+    padding: 0px;
+    /*width: 1280px;*/
+    margin: 0px auto;
+    
+}
+
+.top-head-menu{
+    width: 1155px;
+    background-color: #01203d;
+    margin: 0px auto;
+    
+}
+
+.top-head-menu>div{
+    margin-top: 36px;
+    float: right;
+    
+    font-size: 12px;
+    
+}
+
+.top-head-menu>div>span{
+    padding: 0px;
+    color: #66798a;
+}
+
+.top-head-menu>div>a{
+    text-decoration: none;
+    color: #008cba;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+
+
+
+
+.page-navigation{
+    clear: both;
+    width: 1155px;
+    margin: 10px auto 0px auto;
+    height: 75px;
+    line-height: 75px;
+    
+}
+
+.page-navigation .logo{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    height: 75px;
+    
+}
+
+.page-navigation .nav-menu{
+    float: left;
+}
+
+.page-navigation .nav-menu ul{
+    list-style: none;
+    margin-top: 0px;
+}
+
+.page-navigation .nav-menu ul>li{
+    float: left;
+    margin: 0px 15px;
+}
+
+.page-navigation .nav-menu ul>li>a{
+    text-decoration: none;
+    color: #66798a;
+    font-size: 16px;
+}
+
+.page-navigation .logo img{
+    margin-top: 25px;
+    
+    width: 154px;
+    height: 26px;
+    
+}
+
+.page-navigation .nav-button{
+    float: right;
+}
+
+.page-navigation .nav-button>a{
+    font-size:12px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+}
+
+.page-navigation .demo-button{
+    padding: 10px 22px;
+    background-color: transparent;
+    border: 2px solid #1a3650;
+    margin-left: 25px;
+}
+
+.page-navigation .demo-button:hover{
+    cursor: pointer;
+    background-color: #195186;
+}
+
+.page-navigation .signup-button{
+    padding: 12px 35px;
+    background-color: #81bc1e;
+    border: none;
+    margin-left: 15px;
+}
+
+.page-navigation .signup-button:hover{
+    cursor: pointer;
+    background-color: #b9f258;
+}
+
+.page-navigation>.nav-button>span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.page-navigation>.nav-button>span>img{
+    margin-right: 6px;
+}
+
+
+/*Styles for banner*/
+
+.banner{
+    clear: both;
+    /*width: 1280px;*/
+    height: 410px;
+    background-image: url(http://i.imgur.com/587PYZ2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
+    
+}
+
+.registration-form{
+    height: 350px;
+    width: 475px;
+    background-color: #034888;
+    padding: 30px;
+}
+
+.registration-form h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    
+    font-size: 38px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.registration-form form p{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.registration-form form input{
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+
+.registration-form form input[type=email]{
+    width: 421px;
+}
+
+.registration-form form input[type=tel], .registration-form form input[type=password]{
+    width: 194px;
+    margin-top: 14px;
+    margin-right: 5px;
+    margin-left: 0px;
+}
+
+.registration-form form button{
+    height: 64px;
+    width: 218px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 22px;
+}
+
+.registration-form form button[type=submit]{
+    background-color: #e0741d;
+    margin-right: 5px;
+}
+
+.registration-form form button[type=submit]:hover{
+    cursor: pointer;
+    background: #ef9954;
+}
+
+.registration-form form button[type=button]{
+    background-color: #72a61a;
+}
+
+.registration-form form button[type=button]:hover{
+    cursor: pointer;
+    background: #ace252;
+}
+
+.registration-form form button strong{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    display: block;
+    text-shadow: 0.5px 0.5px lightgray; 
+}
+
+.registration-form form button small{
+    font-size: 10px;
+    color: #fff;
+}
+
+.registration-form form p.term{
+    font-size: 9px;
+    color: #90aecb;
+    margin-top: 16px;
+}
+
+.registration-form form p.term strong{
+    color: #fff;
+}
+
+
+/*Styles for Customer list*/
+
+ul.customer-list{
+    list-style-type: none;
+    margin-left: 96px;
+    width: 1155px;
+    padding: 0px;
+}
+
+ul.customer-list>li{
+    float: left;
+    
+}
+
+ul.customer-list>li>img{
+    
+    width: 100px;
+    margin-right: 20px;
+}
+
+ul.customer-list>li:first-child{
+    color: #686767;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+/*Styles for features list*/
+
+hr{
+    clear: both;
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.features-list{
+    width: 1155px;
+    margin: 0px auto;
+}
+
+.features-list>.slogan{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 23px;
+}
+
+.features-list>ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.features-list>ul>li{
+    float: left;
+    width: 241px;
+    margin-right: 60px;
+    margin-left: 0px;
+    height: 350px; 
+    
+}
+
+.features-list>ul>li:last-child{
+    margin-right: 0px;
+}
+
+.features-list>ul>li>img{
+    width: 100px;
+    height: 100px;
+    margin-left: 63px;
+}
+
+.features-list>ul>li>h4{
+    font-size: 18px;
+    color: #0f5599;
+    font-weight: 400;
+}
+
+.features-list>ul>li>p{
+    font-size: 14px;
+}
+
+
+/*Styles for testimonial area*/
+
+.testimonial-container{
+    width: 1155px;
+    margin: 0px auto;
+}
+
+.testimonial-container .left-div{
+    float: left;
+    width: 710px;
+    
+    
+}
+
+.testimonial-container .left-div>blockquote{
+    padding: 0px;
+    margin: 0px;
+}
+
+.testimonial-container .left-div>blockquote>p{
+    margin-top: 0px;
+}
+
+
+.testimonial-container .right-div{
+    float: right;
+    
+}
+
+.testimonial-container .left-div p{
+    font-size: 19px;
+}
+
+.testimonial-container .left-div footer{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ababab;
+}
+
+
+/*Styles for page footer*/
+
+.page-footer{
+    width: 1155px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.page-footer ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.page-footer>ul{
+    width: 1155px;
+    height: 215px;
+}
+
+
+
+.page-footer>ul>li{
+    float: left;
+    font-size: 10px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.page-footer>ul>li:last-child{
+    width: 288px;
+    position: relative;
+    margin: 0px;
+}
+
+.page-footer>ul>li>ul>li>a{
+    text-decoration: none;
+    color: #008cba;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.page-footer>ul>li>strong{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.page-footer>ul>li>ul{
+    margin-top: 10px;
+}
+
+.page-footer>p{
+    font-size: 10px;
+    margin-bottom: 35px;
+}
+
+.page-footer>ul>li:last-child>img{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
